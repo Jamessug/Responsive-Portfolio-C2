@@ -7,6 +7,18 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: #6c6c6f;
+}
+
+/* Container for header content */ 
+.container { 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0,0,0,.7);
+  border: 5px #6b7178;
+  padding: 13px;
 }
 
 h1,
@@ -16,8 +28,35 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: #fff;
+}
+
+/* Added nav bar styling*/
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Added hover effect*/
+nav a:hover {
+  color: #6c6c6f;  
 }
 
 p {
   margin: 0;
 }
+
+
