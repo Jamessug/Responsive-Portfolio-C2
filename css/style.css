@@ -21,6 +21,11 @@ body {
   padding: 13px;
 }
 
+/* Avatar styling */
+.container img {
+  margin-right: 20px; /* Add spacing between the logo and the h1 */
+}
+
 h1,
 h2,
 h3,
@@ -31,7 +36,7 @@ h6 {
   color: #fff;
 }
 
-/* Added nav bar styling*/
+/* Added nav bar styling */
 
 nav ul {
   list-style: none;
@@ -50,7 +55,7 @@ nav a {
   font-weight: bold;
 }
 
-/* Added hover effect*/
+/* Added hover effect */
 nav a:hover {
   color: #6c6c6f;  
 }
@@ -59,4 +64,38 @@ p {
   margin: 0;
 }
 
+/* Added banner using image provided, try to make it accessible */
+.hero-banner {
+  width: 100vw;
+  height: 30vw;
+  background-image: url('../images/02-hero-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: flex-end; 
+  padding: 20px; 
+}
 
+/* created flexbox within banner container to always keep h2 bottom right */
+.hero-banner h2 {
+  background-color: #6c6c6f;
+  border: 3px solid rgb(0,0,0,.7);
+  border-radius: 6px;
+  margin-top: auto;
+}
+
+
+/* spacing */
+.page-wrapper { 
+  padding: 20px; 
+}
+
+.page-section {
+  margin-bottom: 30px;
+}
+
+.page-section-contact {
+  margin-bottom: 50px;
+}
