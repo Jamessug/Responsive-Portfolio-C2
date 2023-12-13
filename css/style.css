@@ -10,6 +10,10 @@ body {
   background-color: #6c6c6f;
 }
 
+:root {
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* css variable for default box shadow */
+}
+
 /* Container for header content */ 
 .container { 
   margin: 0 auto;
@@ -18,12 +22,17 @@ body {
   align-items: center;
   background-color: rgb(0,0,0,.7);
   border: 5px #6b7178;
+  box-shadow: var(--box-shadow);
   padding: 13px;
 }
 
 /* Avatar styling */
 .container img {
-  margin-right: 20px; /* Add spacing between the logo and the h1 */
+  margin-right: 20px; 
+  height: 10%;
+  width: 10%;
+  border: 3px solid rgb(0,0,0,.7);
+  border-radius: 5px;
 }
 
 h1,
@@ -60,10 +69,6 @@ nav a:hover {
   color: #6c6c6f;  
 }
 
-p {
-  margin: 0;
-}
-
 /* Added banner using image provided, try to make it accessible */
 .hero-banner {
   width: 100vw;
@@ -87,15 +92,39 @@ p {
 }
 
 
-/* spacing */
-.page-wrapper { 
-  padding: 20px; 
+/* main section flexbox trying to keep h2s to left content right */
+
+.page-wrapper {
+  padding: 10px;
+  margin: 10px;
 }
 
-.page-section {
-  margin-bottom: 30px;
+.page-wrapper img {
+  max-width: 30%;
+  max-height: 30%;
 }
 
-.page-section-contact {
-  margin-bottom: 50px;
+.about,
+.work,
+.contact {
+  display: flex;
+  flex-direction: row;
 }
+
+.page-wrapper h2 {
+  align-items: flex-start;
+  margin-right: 100px;
+}
+
+p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.content {
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 10px;
+}
+
+
